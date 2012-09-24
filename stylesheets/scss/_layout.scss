@@ -1,0 +1,344 @@
+/** I *was* going to make this fully responsive, but got lazy. The implementation is here though! *****/
+
+/** [-] TABLE OF CONTENTS *****************************************************************************/
+/****** [+] Let's get started
+        [+] Screens smaller than 960
+        [+] Tablet screens in portrait view
+        [+] All mobile screens
+        [+] Tablet screens, landscape to portrait
+        [+] Tablet screens, portrait to landscape
+*******************************************************************************************************/
+
+/***************************************************************************** [+] LET'S GET STARTED **/
+
+html, body {
+  width: 100%; height: 100%;
+  margin: 0px; padding: 0px;
+}
+
+html {
+  display: table;
+	min-height: 100%;
+  position: absolute;
+  text-rendering: optimizeLegibility;
+  vertical-align: middle;
+}
+
+body {
+  background: $white;
+	color: $black;
+  display: table;
+  @include sans-serif;
+	font-size: 16px;
+  height: 100%;
+	line-height: 1;
+  position: static;
+  top: 0;
+  word-spacing: -0.02em;
+}
+
+::selection {
+  background: $black;
+  color: $white;
+}
+
+img { border-style: none; }
+
+.video-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; padding-top: 30px;
+  position: relative;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+
+  border: none;
+  clear: left;
+  position: absolute;
+}
+
+/** [-] BASELINE STYLING ******************************************************************************/
+/****** wrenlanier.com/5-things-to-do-after-reset-css *************************************************/
+/****** sixrevisions.com/css/css-typography-02 ********************************************************/
+/****** idm.me.uk/textrenaissance/typography.html *****************************************************/
+
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
+p {
+  font-size: 16px/1.5em;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+p + p { text-indent: 1.5em; }
+
+a { text-decoration: none; }
+
+blockquote {
+  background-color: #f5f5f5;
+  margin: 0 36px;
+}
+
+em { font-style: italic; }
+strong, .strong { font-weight: 700; }
+
+pre, code { }
+small { }
+
+ul li, ol li {
+  list-style-type: none;
+  padding-bottom: 0.85em;
+}
+
+/** [-] MASTHEAD **************************************************************************************/
+
+#masthead {
+  width: 100%; height: 50px;
+  background: rgba(25, 25, 25, 0.5);
+
+  nav {
+    width: 900px; height: auto;
+
+    box-sizing: border-box;
+    color: $white;
+    display: block;
+    margin: 0 auto;
+
+    ul li {
+      width: 130px; height: 32px;
+      margin: 0; padding: 0;
+
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 18px 0 0 0;
+      text-align: center;
+
+      &:hover {
+        background: rgba(25, 25, 25, 0.5);
+      }
+    }
+
+    .logo {
+      width: 250px; height: 38px;
+
+      background: url("../images/26px-logo.jpg") no-repeat bottom left;
+      box-sizing: border-box;
+      font-size: 24px;
+      font-weight: 900;
+      text-align: left;
+      padding: 9px 0 0 30px;
+
+      &:hover {
+        background: url("../images/26px-logo.jpg") no-repeat bottom left;
+      }
+    }
+
+    a {
+      width: 130px; height: 32px;
+      color: $white;
+      box-sizing: border-box;
+      display: block;
+    }
+  }
+}
+
+/** [-] MAIN INDEX CONTENT ****************************************************************************/
+
+#index-01, #index-02, #index-03 {
+  line-height: 1.2;
+
+  .headline {
+    font-size: 53px;
+    margin: 60px 0 0 0;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .things {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+
+  .things li {
+    display: inline-block;
+    float: left;
+    margin: 50px 0 0 0;
+    width: 300px;
+
+    img { margin: 0 0 0 25%; }
+  }
+
+  .thing-title {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .thing-description, .points {
+    margin: 0 auto;
+    width: 260px;
+  }
+
+  .thing-description {
+    font-size: 14px;
+    font-weight: 700;
+    height: 80px;
+  }
+
+  .points {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+
+  .points li {
+    margin: 10px 0; padding: 0 0 0 1rem;
+    text-indent: -1rem;
+    width: 250px;
+
+    &:before { content: "—" " "; }
+  }
+  
+  .tab {
+    display: inline-block;
+    width: 15px; height: 1px;
+    margin: 0 0 0 15px;
+  }
+}
+
+#index-01 {
+  background: url("../images/overtheledge-blur.jpg") no-repeat top left;
+  background-size: cover;
+  color: $white;
+  font-size: 53px;
+  height: 650px;
+  overflow: hidden;
+  text-shadow: 0.5px 1.5px 2px $black;
+
+  .info {
+    line-height: 1.1;
+    margin: 144px 0 0 0;
+  }
+
+  .iphone { margin: 56px 0 0 0; }
+}
+
+#index-02 {
+}
+
+#index-03 {
+  background: $blue;
+  color: $white;
+}
+
+.internal-wrapper {
+  width: 900px; height: auto;
+  margin: 0 auto;
+}
+
+.left, .right { display: inline-block; }
+
+.left {
+  float: left;
+  width: 60%;
+}
+
+.right {
+  float: right;
+  width: 40%;
+}
+
+/** [-] FOOTER ****************************************************************************************/
+
+#footer {
+  width: 900px; height: auto;
+
+  line-height: 1.3;
+  margin: 2rem auto;
+
+  a {
+    color: $blue;
+    &:hover { color: $grey; }
+  }
+  
+  form { width: auto; }
+
+  input {
+    width: 260px; height: 58px;
+    margin: 1rem 0 0 0; padding: 0;
+
+    border: 1px solid #d7d7d7;
+    color: #dddddd;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    font-style: italic;
+    outline: none;
+    text-align: center;
+  }
+
+  input[type=submit] {
+    width: 130px; height: 60px;
+
+    background: #d7d7d7;
+    color: $white;
+  }
+
+  .left {
+    color: $gray;
+    font-size: 30px;
+  }
+
+  .right {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .copyright {
+    display: block;
+    margin: 3.4rem 0 0.5rem 0;
+  }
+}
+
+/****************************************************************** [+] THINGS TO HIDE WHEN PRINTING **/
+
+@media print {
+}
+
+/********************************************************************** [+] SCREENS SMALLER THAN 960 **/
+
+@media only screen and (max-width: 959px) {
+}
+
+/********************************************************************* [+] TABLET SCREENS (PORTRAIT) **/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/**************************************************************************** [+] ALL MOBILE SCREENS **/
+
+@media only screen and (max-width: 767px) {
+}
+
+/******************************************************** [+] TABLET SCREENS (LANDSCAPE TO PORTRAIT) **/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/******************************************************** [+] TABLET SCREENS (PORTRAIT TO LANDSCAPE) **/
+
+@media only screen and (max-width: 479px) {
+}

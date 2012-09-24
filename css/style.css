@@ -1,0 +1,708 @@
+@charset "IBM437";
+/** [-] TABLE OF CONTENTS *****************************************************************************/
+/****** [+] Base
+        [+] Colours ('cause I'm fancy, like the British)
+        [+] Typography
+*******************************************************************************************************/
+/****************************************************************************************** [+] BASE **/
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/** [-] HTML5 DISPLAY RESET FOR CLUNKERS **************************************************************/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+input:focus {
+  outline: 0; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: " ";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/** [-] CLEARFIX **************************************************************************************/
+.cf {
+  zoom: 1; }
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/*************************************************************************************** [+] COLOURS **/
+/************************************************************************************ [+] TYPOGRAPHY **/
+/************************************************************************************** SKELETON 1.2 **/
+/** [-] TABLE OF CONTENTS *****************************************************************************/
+/****** [+] Base 960 Grid
+        [+] Tablet in 768-width portrait view
+        [+] Mobile in 320-width portrait view
+        [+] Mobile in 480-width landscape view
+        [+] Clearing
+*******************************************************************************************************/
+/********************************************************************************* [+] BASE 960 GRID **/
+.container {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 960px; }
+
+.container .column, .container .columns {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline;
+  float: left; }
+
+.row {
+  margin-bottom: 20px; }
+
+/** [-] NESTED COLUMN CLASSES *************************************************************************/
+.column.alpha, .columns.alpha {
+  margin-left: 0; }
+
+.column.omega, .columns.omega {
+  margin-right: 0; }
+
+/** [-] BASE GRID *************************************************************************************/
+/****** [*] [***********] ONE // ELEVEN
+        [**] [**********] TWO // TEN
+        [***] [*********] THREE // NINE
+        [****] [********] FOUR // EIGHT
+        [*****] [*******] FIVE // SEVEN
+        [******] [******] SIX // SIX
+        [*******] [*****] SEVEN // FIVE
+        [********] [****] EIGHT // FOUR
+        [*********] [***] NINE // THREE
+        [**********] [**] TEN // TWO
+        [***********] [*] ELEVEN // ONE
+*******************************************************************************************************/
+.container .one.column {
+  width: 40px; }
+
+.container .two.columns {
+  width: 100px; }
+
+.container .three.columns {
+  width: 160px; }
+
+.container .four.columns {
+  width: 220px; }
+
+.container .five.columns {
+  width: 280px; }
+
+.container .six.columns {
+  width: 340px; }
+
+.container .seven.columns {
+  width: 400px; }
+
+.container .eight.columns {
+  width: 460px; }
+
+.container .nine.columns {
+  width: 520px; }
+
+.container .ten.columns {
+  width: 580px; }
+
+.container .eleven.columns {
+  width: 640px; }
+
+.container .twelve.columns {
+  width: 700px; }
+
+.container .thirteen.columns {
+  width: 760px; }
+
+.container .fourteen.columns {
+  width: 820px; }
+
+.container .fifteen.columns {
+  width: 880px; }
+
+.container .sixteen.columns {
+  width: 940px; }
+
+.container .one-third.column {
+  width: 300px; }
+
+.container .two-thirds.column {
+  width: 620px; }
+
+/** [-] OFFSETS ***************************************************************************************/
+.container .offset-by-one {
+  padding-left: 60px; }
+
+.container .offset-by-two {
+  padding-left: 120px; }
+
+.container .offset-by-three {
+  padding-left: 180px; }
+
+.container .offset-by-four {
+  padding-left: 240px; }
+
+.container .offset-by-five {
+  padding-left: 300px; }
+
+.container .offset-by-six {
+  padding-left: 360px; }
+
+.container .offset-by-seven {
+  padding-left: 420px; }
+
+.container .offset-by-eight {
+  padding-left: 480px; }
+
+.container .offset-by-nine {
+  padding-left: 540px; }
+
+.container .offset-by-ten {
+  padding-left: 600px; }
+
+.container .offset-by-eleven {
+  padding-left: 660px; }
+
+.container .offset-by-twelve {
+  padding-left: 720px; }
+
+.container .offset-by-thirteen {
+  padding-left: 780px; }
+
+.container .offset-by-fourteen {
+  padding-left: 840px; }
+
+.container .offset-by-fifteen {
+  padding-left: 900px; }
+
+/************************************************************* [+] TABLET IN 768-WIDTH PORTRAIT VIEW **/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 768px; }
+
+  .container .column, v.container .columns {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+    margin-right: 10px; }
+
+  .column.omega, .columns.omega {
+    margin-right: 0;
+    margin-left: 10px; }
+
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .container .one.column {
+    width: 28px; }
+
+  .container .two.columns {
+    width: 76px; }
+
+  .container .three.columns {
+    width: 124px; }
+
+  .container .four.columns {
+    width: 172px; }
+
+  .container .five.columns {
+    width: 220px; }
+
+  .container .six.columns {
+    width: 268px; }
+
+  .container .seven.columns {
+    width: 316px; }
+
+  .container .eight.columns {
+    width: 364px; }
+
+  .container .nine.columns {
+    width: 412px; }
+
+  .container .ten.columns {
+    width: 460px; }
+
+  .container .eleven.columns {
+    width: 508px; }
+
+  .container .twelve.columns {
+    width: 556px; }
+
+  .container .thirteen.columns {
+    width: 604px; }
+
+  .container .fourteen.columns {
+    width: 652px; }
+
+  .container .fifteen.columns {
+    width: 700px; }
+
+  .container .sixteen.columns {
+    width: 748px; }
+
+  .container .one-third.column {
+    width: 236px; }
+
+  .container .two-thirds.column {
+    width: 492px; }
+
+  /** [-] OFFSETS *************************************************************************************/
+  .container .offset-by-one {
+    padding-left: 48px; }
+
+  .container .offset-by-two {
+    padding-left: 96px; }
+
+  .container .offset-by-three {
+    padding-left: 144px; }
+
+  .container .offset-by-four {
+    padding-left: 192px; }
+
+  .container .offset-by-five {
+    padding-left: 240px; }
+
+  .container .offset-by-six {
+    padding-left: 288px; }
+
+  .container .offset-by-seven {
+    padding-left: 336px; }
+
+  .container .offset-by-eight {
+    padding-left: 384px; }
+
+  .container .offset-by-nine {
+    padding-left: 432px; }
+
+  .container .offset-by-ten {
+    padding-left: 480px; }
+
+  .container .offset-by-eleven {
+    padding-left: 528px; }
+
+  .container .offset-by-twelve {
+    padding-left: 576px; }
+
+  .container .offset-by-thirteen {
+    padding-left: 624px; }
+
+  .container .offset-by-fourteen {
+    padding-left: 672px; }
+
+  .container .offset-by-fifteen {
+    padding-left: 720px; } }
+/************************************************************* [+] MOBILE IN 320-WIDTH PORTRAIT VIEW **/
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px; }
+
+  .container .columns, .container .column {
+    margin: 0; }
+
+  .container .one.column,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 300px; }
+
+  /** [-] OFFSETS *************************************************************************************/
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0; } }
+/*********************************************************** [+] MOBILE IN 480-WIDTH LANDSCAPE VIEW **/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 420px; }
+
+  .container .columns, .container .column {
+    margin: 0; }
+
+  .container .one.column,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 420px; } }
+/************************************************************************************** [+] CLEARING **/
+.container:after {
+  clear: both;
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+/** [-] NOTE ******************************************************************************************/
+/****** Use clearfix class on parent to clear nested columns, or wrap each row of columns in a
+        <div class="row">
+*******************************************************************************************************/
+.clearfix:before, .clearfix:after,
+.row:before, .row:after {
+  width: 0;
+  height: 0;
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden; }
+
+.row:after, .clearfix:after {
+  clear: both; }
+
+.row, .clearfix {
+  zoom: 1; }
+
+/** [-] NOTE ******************************************************************************************/
+/****** You can also use <br class="clear"/> to clear columns *****************************************/
+.clear {
+  width: 0;
+  height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden; }
+
+/** I *was* going to make this fully responsive, but got lazy. The implementation is here though! *****/
+/** [-] TABLE OF CONTENTS *****************************************************************************/
+/****** [+] Let's get started
+        [+] Screens smaller than 960
+        [+] Tablet screens in portrait view
+        [+] All mobile screens
+        [+] Tablet screens, landscape to portrait
+        [+] Tablet screens, portrait to landscape
+*******************************************************************************************************/
+/***************************************************************************** [+] LET'S GET STARTED **/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+html {
+  display: table;
+  min-height: 100%;
+  position: absolute;
+  text-rendering: optimizeLegibility;
+  vertical-align: middle; }
+
+body {
+  background: #fefefe;
+  color: #191919;
+  display: table;
+  font-family: Open Sans, "Open Sans", "open-sans", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1;
+  position: static;
+  top: 0;
+  word-spacing: -0.02em; }
+
+::selection {
+  background: #191919;
+  color: #fefefe; }
+
+img {
+  border-style: none; }
+
+.video-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative; }
+
+.video-container iframe, .video-container object, .video-container embed {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  clear: left;
+  position: absolute; }
+
+/** [-] BASELINE STYLING ******************************************************************************/
+/****** wrenlanier.com/5-things-to-do-after-reset-css *************************************************/
+/****** sixrevisions.com/css/css-typography-02 ********************************************************/
+/****** idm.me.uk/textrenaissance/typography.html *****************************************************/
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 14px; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  font-size: 16px/1.5em;
+  margin: 0.5rem 0 1.5rem 0; }
+
+p + p {
+  text-indent: 1.5em; }
+
+a {
+  text-decoration: none; }
+
+blockquote {
+  background-color: #f5f5f5;
+  margin: 0 36px; }
+
+em {
+  font-style: italic; }
+
+strong, .strong {
+  font-weight: 700; }
+
+ul li, ol li {
+  list-style-type: none;
+  padding-bottom: 0.85em; }
+
+/** [-] MASTHEAD **************************************************************************************/
+#masthead {
+  width: 100%;
+  height: 50px;
+  background: rgba(25, 25, 25, 0.5); }
+  #masthead nav {
+    width: 900px;
+    height: auto;
+    box-sizing: border-box;
+    color: #fefefe;
+    display: block;
+    margin: 0 auto; }
+    #masthead nav ul li {
+      width: 130px;
+      height: 32px;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 18px 0 0 0;
+      text-align: center; }
+      #masthead nav ul li:hover {
+        background: rgba(25, 25, 25, 0.5); }
+    #masthead nav .logo {
+      width: 250px;
+      height: 38px;
+      background: url("../images/26px-logo.jpg") no-repeat bottom left;
+      box-sizing: border-box;
+      font-size: 24px;
+      font-weight: 900;
+      text-align: left;
+      padding: 9px 0 0 30px; }
+      #masthead nav .logo:hover {
+        background: url("../images/26px-logo.jpg") no-repeat bottom left; }
+    #masthead nav a {
+      width: 130px;
+      height: 32px;
+      color: #fefefe;
+      box-sizing: border-box;
+      display: block; }
+
+/** [-] MAIN INDEX CONTENT ****************************************************************************/
+#index-01, #index-02, #index-03 {
+  line-height: 1.2; }
+  #index-01 .headline, #index-02 .headline, #index-03 .headline {
+    font-size: 53px;
+    margin: 60px 0 0 0;
+    text-align: center; }
+  #index-01 .tagline, #index-02 .tagline, #index-03 .tagline {
+    font-size: 14px;
+    text-align: center; }
+  #index-01 .things, #index-02 .things, #index-03 .things {
+    display: block;
+    margin: 0 0 20px 0; }
+  #index-01 .things li, #index-02 .things li, #index-03 .things li {
+    display: inline-block;
+    float: left;
+    margin: 50px 0 0 0;
+    width: 300px; }
+    #index-01 .things li img, #index-02 .things li img, #index-03 .things li img {
+      margin: 0 0 0 25%; }
+  #index-01 .thing-title, #index-02 .thing-title, #index-03 .thing-title {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center; }
+  #index-01 .thing-description, #index-01 .points, #index-02 .thing-description, #index-02 .points, #index-03 .thing-description, #index-03 .points {
+    margin: 0 auto;
+    width: 260px; }
+  #index-01 .thing-description, #index-02 .thing-description, #index-03 .thing-description {
+    font-size: 14px;
+    font-weight: 700;
+    height: 80px; }
+  #index-01 .points, #index-02 .points, #index-03 .points {
+    font-size: 12px;
+    margin: 10px auto; }
+  #index-01 .points li, #index-02 .points li, #index-03 .points li {
+    margin: 10px 0;
+    padding: 0 0 0 1rem;
+    text-indent: -1rem;
+    width: 250px; }
+    #index-01 .points li:before, #index-02 .points li:before, #index-03 .points li:before {
+      content: "—" " "; }
+  #index-01 .tab, #index-02 .tab, #index-03 .tab {
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    margin: 0 0 0 15px; }
+
+#index-01 {
+  background: url("../images/overtheledge-blur.jpg") no-repeat top left;
+  background-size: cover;
+  color: #fefefe;
+  font-size: 53px;
+  height: 650px;
+  overflow: hidden;
+  text-shadow: 0.5px 1.5px 2px #191919; }
+  #index-01 .info {
+    line-height: 1.1;
+    margin: 144px 0 0 0; }
+  #index-01 .iphone {
+    margin: 56px 0 0 0; }
+
+#index-03 {
+  background: #00aef4;
+  color: #fefefe; }
+
+.internal-wrapper {
+  width: 900px;
+  height: auto;
+  margin: 0 auto; }
+
+.left, .right {
+  display: inline-block; }
+
+.left {
+  float: left;
+  width: 60%; }
+
+.right {
+  float: right;
+  width: 40%; }
+
+/** [-] FOOTER ****************************************************************************************/
+#footer {
+  width: 900px;
+  height: auto;
+  line-height: 1.3;
+  margin: 2rem auto; }
+  #footer a {
+    color: #00aef4; }
+    #footer a:hover {
+      color: #d7d7d7; }
+  #footer form {
+    width: auto; }
+  #footer input {
+    width: 260px;
+    height: 58px;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    border: 1px solid #d7d7d7;
+    color: #dddddd;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    font-style: italic;
+    outline: none;
+    text-align: center; }
+  #footer input[type=submit] {
+    width: 130px;
+    height: 60px;
+    background: #d7d7d7;
+    color: #fefefe; }
+  #footer .left {
+    color: #7c7c7c;
+    font-size: 30px; }
+  #footer .right {
+    font-size: 12px;
+    font-weight: 300; }
+  #footer .copyright {
+    display: block;
+    margin: 3.4rem 0 0.5rem 0; }
+
+/****************************************************************** [+] THINGS TO HIDE WHEN PRINTING **/
+/********************************************************************** [+] SCREENS SMALLER THAN 960 **/
+/********************************************************************* [+] TABLET SCREENS (PORTRAIT) **/
+/**************************************************************************** [+] ALL MOBILE SCREENS **/
+/******************************************************** [+] TABLET SCREENS (LANDSCAPE TO PORTRAIT) **/
+/******************************************************** [+] TABLET SCREENS (PORTRAIT TO LANDSCAPE) **/
